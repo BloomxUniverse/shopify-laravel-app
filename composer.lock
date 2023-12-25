@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e42ca2a0fdedef67f77e640f3582e60",
+    "content-hash": "f1f33aecd1b57ee35da23e96b5b66012",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -939,6 +939,62 @@
             "time": "2020-12-18T17:34:13+00:00"
         },
         {
+            "name": "gnikyt/basic-shopify-api",
+            "version": "v11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gnikyt/Basic-Shopify-API.git",
+                "reference": "acbdcab0a962313acccbefd97615270d784822c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gnikyt/Basic-Shopify-API/zipball/acbdcab0a962313acccbefd97615270d784822c5",
+                "reference": "acbdcab0a962313acccbefd97615270d784822c5",
+                "shasum": ""
+            },
+            "require": {
+                "caseyamcl/guzzle_retry_middleware": "^2.3",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.5 || ^7.0",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.8",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^6.2 || ^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gnikyt\\BasicShopifyAPI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler King",
+                    "email": "tyler.n.king@gmail.com"
+                }
+            ],
+            "description": "A basic Shopify API wrapper with REST and GraphQL support, powered by Guzzle.",
+            "keywords": [
+                "api",
+                "graphql",
+                "rest",
+                "shopify",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/gnikyt/basic-shopify-api/issues",
+                "source": "https://github.com/gnikyt/basic-shopify-api"
+            },
+            "time": "2022-11-30T20:09:04+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.1.2",
             "source": {
@@ -1545,6 +1601,99 @@
                 }
             ],
             "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
+            "name": "kyon147/laravel-shopify",
+            "version": "v19.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kyon147/laravel-shopify.git",
+                "reference": "0f24b0c7fdfd3e3a03f7ae365bb082f8ca2be51e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kyon147/laravel-shopify/zipball/0f24b0c7fdfd3e3a03f7ae365bb082f8ca2be51e",
+                "reference": "0f24b0c7fdfd3e3a03f7ae365bb082f8ca2be51e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "funeralzone/valueobjects": "^0.5",
+                "gnikyt/basic-shopify-api": "^9.0 || ^10.0 || ^11.0",
+                "jenssegers/agent": "^2.6",
+                "laravel/framework": "^8.0 || ^9.0 || ^10.0",
+                "php": "^8.0 || 8.1"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.8",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "laravel/legacy-factories": "^v1.3.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/database": "~3.8 || ~4.0 || ~5.0 || ~6.0 || ~7.0",
+                "orchestra/testbench": "~3.8 || ~4.0 || ~5.0 || ~6.0 || ~7.0 || ~8.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "~8.0 || ^9.0 || ^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osiset\\ShopifyApp\\ShopifyAppProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osiset\\ShopifyApp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke (Kyon147)",
+                    "email": "support@appydesign.co.uk"
+                }
+            ],
+            "description": "Shopify package for Laravel to aide in app development",
+            "keywords": [
+                "api",
+                "callback-url",
+                "driver",
+                "facade",
+                "laravel",
+                "laravel-package",
+                "laravel-shopify",
+                "scripttags",
+                "sdk",
+                "shopify",
+                "shopify-api",
+                "shopify-app",
+                "webhook"
+            ],
+            "support": {
+                "forum": "https://github.com/osiset/laravel-shopify/discussions",
+                "issues": "https://github.com/osiset/laravel-shopify/issues",
+                "source": "https://github.com/osiset/laravel-shopify",
+                "wiki": "https://github.com/osiset/laravel-shopify/wiki"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/kyon147",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/kyon147",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/laravel-shopify",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-11-21T11:42:33+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2892,156 +3041,6 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
-        },
-        {
-            "name": "osiset/basic-shopify-api",
-            "version": "v10.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/osiset/Basic-Shopify-API.git",
-                "reference": "7354807d689dc6a6e0b4ea0c9b7daf8d896d85c7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/osiset/Basic-Shopify-API/zipball/7354807d689dc6a6e0b4ea0c9b7daf8d896d85c7",
-                "reference": "7354807d689dc6a6e0b4ea0c9b7daf8d896d85c7",
-                "shasum": ""
-            },
-            "require": {
-                "caseyamcl/guzzle_retry_middleware": "^2.3",
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.5 || ^7.0",
-                "php": ">=7.3.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.8",
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^6.2 || ^9.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Osiset\\BasicShopifyAPI\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tyler King",
-                    "email": "tyler@osiset.com"
-                }
-            ],
-            "description": "A basic Shopify API wrapper with REST and GraphQL support, powered by Guzzle.",
-            "keywords": [
-                "api",
-                "graphql",
-                "rest",
-                "shopify",
-                "wrapper"
-            ],
-            "support": {
-                "issues": "https://github.com/osiset/basic-shopify-api/issues",
-                "source": "https://github.com/osiset/basic-shopify-api"
-            },
-            "abandoned": "https://github.com/gnikyt/Basic-Shopify-API",
-            "time": "2021-09-08T15:12:46+00:00"
-        },
-        {
-            "name": "osiset/laravel-shopify",
-            "version": "v17.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/osiset/laravel-shopify.git",
-                "reference": "695f968859be1bf041c5b1df8d67640502e5ce1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/osiset/laravel-shopify/zipball/695f968859be1bf041c5b1df8d67640502e5ce1a",
-                "reference": "695f968859be1bf041c5b1df8d67640502e5ce1a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "funeralzone/valueobjects": "^0.5",
-                "jenssegers/agent": "^2.6",
-                "laravel/framework": "^7.0 || ^8.0 || ^9.0",
-                "osiset/basic-shopify-api": "^9.0 || <=10.0.5",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.8",
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "mockery/mockery": "^1.0",
-                "orchestra/database": "~3.8 || ~4.0 || ~5.0 || ~6.0 || ~7.0",
-                "orchestra/testbench": "~3.8 || ~4.0 || ~5.0 || ~6.0 || ~7.0",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "~8.0 || ^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Osiset\\ShopifyApp\\ShopifyAppProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Osiset\\ShopifyApp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tyler King",
-                    "email": "tyler@osiset.com"
-                }
-            ],
-            "description": "Shopify package for Laravel to aide in app development",
-            "keywords": [
-                "api",
-                "callback-url",
-                "driver",
-                "facade",
-                "laravel",
-                "laravel-package",
-                "laravel-shopify",
-                "scripttags",
-                "sdk",
-                "shopify",
-                "shopify-api",
-                "shopify-app",
-                "webhook"
-            ],
-            "support": {
-                "forum": "https://github.com/osiset/laravel-shopify/discussions",
-                "issues": "https://github.com/osiset/laravel-shopify/issues",
-                "source": "https://github.com/osiset/laravel-shopify",
-                "wiki": "https://github.com/osiset/laravel-shopify/wiki"
-            },
-            "funding": [
-                {
-                    "url": "https://paypal.me/osiset",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/osiset",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/laravel-shopify",
-                    "type": "open_collective"
-                }
-            ],
-            "abandoned": "https://github.com/Kyon147/laravel-shopify",
-            "time": "2022-11-10T16:08:22+00:00"
         },
         {
             "name": "phpoption/phpoption",
