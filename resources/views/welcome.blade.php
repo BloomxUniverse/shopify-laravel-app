@@ -7,7 +7,6 @@
 
 @section('scripts')
     @parent
-    <p>{{shopify-app::get('admin/products.json')}}</p>
     <script>
         actions.TitleBar.create(app, { title: 'Welcome' });
     </script>
