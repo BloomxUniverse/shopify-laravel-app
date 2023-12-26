@@ -1,48 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+@extends('shopify-app::layouts.default')
 
-<div class="container mt-3">
-  <h3>Modal Example</h3>
-  <p>Click on the button to open the modal.</p>
-  
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-    Open modal
-  </button>
-</div>
+@section('content')
+    <!-- You are: (shop domain name) -->
+    <p>You are: {{ $shopDomain ?? Auth::user()->name }}</p>
+@endsection
 
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-       Bloomx page body here
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-</body>
-</html>
+@section('scripts')
+    @parent
+    <p>{{shopify-app::get('admin/products.json')}}</p>
+    <script>
+        actions.TitleBar.create(app, { title: 'Welcome' });
+    </script>
+@endsection
