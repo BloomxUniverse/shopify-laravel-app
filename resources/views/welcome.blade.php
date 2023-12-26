@@ -31,7 +31,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+       Bloomx page body here
       </div>
 
       <!-- Modal footer -->
