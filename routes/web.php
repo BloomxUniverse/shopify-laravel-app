@@ -17,11 +17,8 @@ use Illuminate\Support\Facades\File;
 Route::get('/', function () {
     //return view('welcome');
     $shop = Auth::user();
-    $domain = $shop->getDomain()->toNative();
-    $shopApi = $shop->api()->rest('GET', '/admin/shop.json')['body']['shop'];
+    $request = $shop->api()->rest('GET', '/admin/shop.json');
+    // $request = $shop->api()->graph('{ shop { name } }');
+    echo $request['body']['shop']['name'];
 
-    Log::info("Shop {$domain}'s object:" . json_encode($shop));
-    Log::info("Shop {$domain}'s API objct:" . json_encode($shopApi));
-    echo "hello";
-    
 })->middleware(['verify.shopify'])->name('home');
