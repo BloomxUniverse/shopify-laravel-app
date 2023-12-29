@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\File;
 Route::get('/', function () {
     //return view('welcome');
     $shop = Auth::user();
-    $request = $shop->api()->rest('GET', '/admin/shop.json');
-    // $request = $shop->api()->graph('{ shop { name } }');
-    echo $request['body']['shop']['name'];
+    // $request = $shop->api()->rest('GET', '/admin/shop.json');
+    $response = $shop->api()->rest('GET', '/admin/api/2023-10/products/count.json');
+    echo json_encode($response);
 
 })->middleware(['verify.shopify'])->name('home');
