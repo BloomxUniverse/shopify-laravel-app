@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\File;
 
 Route::get('/', function () {
     //return view('welcome');
-    echo "hello";
+    echo "hello".$shopDomain;
 })->middleware(['verify.shopify'])->name('home');
